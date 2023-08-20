@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 const posts = [
   {
@@ -34,5 +34,5 @@ const posts = [
 ];
 
 export async function GET() {
-  return (NextResponse.json(posts))
+  return NextResponse.json(posts);
 }
