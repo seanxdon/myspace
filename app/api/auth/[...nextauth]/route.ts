@@ -9,7 +9,7 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.GITHUB_SECRET!,
     }),
   ]
-}
+};
 
 const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };
